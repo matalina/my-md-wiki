@@ -9,7 +9,6 @@
         xhtmlOut: true,
         breaks: true
     });
-    
     let markdown = 'Loading...';
 
     onMount(async () => {

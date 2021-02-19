@@ -8496,10 +8496,10 @@ var app = (function () {
     			t2 = text(t2_value);
     			t3 = space();
     			main = element("main");
-    			add_location(h2, file$2, 21, 0, 443);
-    			add_location(p, file$2, 22, 0, 473);
+    			add_location(h2, file$2, 20, 0, 438);
+    			add_location(p, file$2, 21, 0, 468);
     			attr_dev(main, "class", "m-3");
-    			add_location(main, file$2, 23, 0, 496);
+    			add_location(main, file$2, 22, 0, 491);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
