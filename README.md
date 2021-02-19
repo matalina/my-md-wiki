@@ -2,12 +2,12 @@
 
 A markdown wiki app using:
 
-- svelte
-- page.js
-- tailwind css
-- github api
-- axios
-- remarkable
+- [svelte](https://svelte.dev/)
+- [page.js](https://visionmedia.github.io/page.js/)
+- [tailwind css](https://tailwindcss.com/)
+- [github api](https://docs.github.com/en/rest)
+- [axios](https://github.com/axios/axios)
+- [remarkable](https://github.com/jonschlinkert/remarkable)
 
 ### Helpful Articles
 
