@@ -7,10 +7,16 @@
     import Feed from './pages/Feed.svelte';
     
     let page;
+    let params;
 
     router('/', () => page = Home);
     router('/about', () => page = About);
-    router('/page', () => page = Page);
+    router('/page/:slug(.*)', (ctx, next) => {
+            params = ctx.params;
+            next();
+        },  
+        () => page = Page
+    );
     router('/feed', () => page = Feed);
 
     router.start();
@@ -19,4 +25,4 @@
 
 <h1>Master Layout</h1>
 
-<svelte:component this={page} />
+<svelte:component this={page} params={params}/>

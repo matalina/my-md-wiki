@@ -18,10 +18,12 @@ export const getContents = async (url) => {
 
 export const getPage = async (page) => {
     try {
-        const response = await Api.get(`${baseURL}/repos/${config.github_owner}/${config.github_repo}/contents/${page}`);
+        const response = await Api.get(`${baseURL}/repos/${config.github_owner}/${config.github_repo}/contents/${page}.md`);
         let url = response.download_url;
         return await getContents(url);
     } catch (error) {
-        console.error(error);
+        const response = await Api.get(`${baseURL}/repos/${config.github_owner}/${config.github_repo}/contents/not-found.md`);
+        let url = response.download_url;
+        return await getContents(url);
     }
 }
