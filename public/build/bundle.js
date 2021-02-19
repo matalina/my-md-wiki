@@ -8291,7 +8291,7 @@ var app = (function () {
         github_owner: 'AJsVoices',
         github_repo: 'story-bible',
 
-        home: 'README.md'
+        home: 'README'
     };
 
     const baseURL = 'https://api.github.com';
