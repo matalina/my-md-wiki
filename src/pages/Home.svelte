@@ -16,4 +16,6 @@
     });
 
 </script>
-<h2>{@html markdown}</h2>
+<main class="m-3">
+    {@html markdown}
+</main>
